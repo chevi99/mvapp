@@ -12,6 +12,23 @@
 		0137B42D20B2C63E0026EA9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0137B42B20B2C63E0026EA9A /* Main.storyboard */; };
 		0137B42F20B2C63E0026EA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0137B42E20B2C63E0026EA9A /* Assets.xcassets */; };
 		0137B43220B2C63E0026EA9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0137B43020B2C63E0026EA9A /* LaunchScreen.storyboard */; };
+		0137B43A20B326030026EA9A /* data_permissions.html in Resources */ = {isa = PBXBuildFile; fileRef = 0137B43920B326030026EA9A /* data_permissions.html */; };
+		015737D620B32B8E00759E21 /* app.v2.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D520B32B8E00759E21 /* app.v2.css */; };
+		015737D820B32BC500759E21 /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D720B32BC500759E21 /* custom.css */; };
+		015737DA20B32BEF00759E21 /* font.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D920B32BEF00759E21 /* font.css */; };
+		015737DC20B32C1F00759E21 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 015737DB20B32C1F00759E21 /* icon1.png */; };
+		015737DE20B32C3800759E21 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 015737DD20B32C3800759E21 /* icon2.png */; };
+		015737E020B32C8200759E21 /* roaming_faq.html in Resources */ = {isa = PBXBuildFile; fileRef = 015737DF20B32C8200759E21 /* roaming_faq.html */; };
+		015737E220B32CAE00759E21 /* roamingdiscounts.html in Resources */ = {isa = PBXBuildFile; fileRef = 015737E120B32CAE00759E21 /* roamingdiscounts.html */; };
+		015737E420B32CD500759E21 /* simswap.html in Resources */ = {isa = PBXBuildFile; fileRef = 015737E320B32CD500759E21 /* simswap.html */; };
+		015737E620B32D0500759E21 /* slidebars.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737E520B32D0500759E21 /* slidebars.min.css */; };
+		015737EA20B32D2900759E21 /* terms_and_conditions.html in Resources */ = {isa = PBXBuildFile; fileRef = 015737E720B32D2900759E21 /* terms_and_conditions.html */; };
+		015737EB20B32D2900759E21 /* terms_netperform.html in Resources */ = {isa = PBXBuildFile; fileRef = 015737E820B32D2900759E21 /* terms_netperform.html */; };
+		015737EC20B32D2900759E21 /* terms.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737E920B32D2900759E21 /* terms.css */; };
+		01628B5920B42AA100D5CD3F /* VodafoneRg_Bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01628B5720B4293400D5CD3F /* VodafoneRg_Bd.ttf */; };
+		01628B5A20B42AC300D5CD3F /* VodafoneRg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01628B5420B4293400D5CD3F /* VodafoneRg.ttf */; };
+		01628B5C20B44C4000D5CD3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5B20B44C4000D5CD3F /* LoginViewController.swift */; };
+		01628B5E20B46CC300D5CD3F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +39,28 @@
 		0137B42E20B2C63E0026EA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0137B43120B2C63E0026EA9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0137B43320B2C63E0026EA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0137B43920B326030026EA9A /* data_permissions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = data_permissions.html; sourceTree = "<group>"; };
+		015737D520B32B8E00759E21 /* app.v2.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = app.v2.css; sourceTree = "<group>"; };
+		015737D720B32BC500759E21 /* custom.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
+		015737D920B32BEF00759E21 /* font.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = font.css; sourceTree = "<group>"; };
+		015737DB20B32C1F00759E21 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		015737DD20B32C3800759E21 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		015737DF20B32C8200759E21 /* roaming_faq.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = roaming_faq.html; sourceTree = "<group>"; };
+		015737E120B32CAE00759E21 /* roamingdiscounts.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = roamingdiscounts.html; sourceTree = "<group>"; };
+		015737E320B32CD500759E21 /* simswap.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = simswap.html; sourceTree = "<group>"; };
+		015737E520B32D0500759E21 /* slidebars.min.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = slidebars.min.css; sourceTree = "<group>"; };
+		015737E720B32D2900759E21 /* terms_and_conditions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = terms_and_conditions.html; sourceTree = "<group>"; };
+		015737E820B32D2900759E21 /* terms_netperform.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = terms_netperform.html; sourceTree = "<group>"; };
+		015737E920B32D2900759E21 /* terms.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = terms.css; sourceTree = "<group>"; };
+		01628B5220B4293400D5CD3F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		01628B5320B4293400D5CD3F /* VodafoneLt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VodafoneLt.ttf; sourceTree = "<group>"; };
+		01628B5420B4293400D5CD3F /* VodafoneRg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VodafoneRg.ttf; sourceTree = "<group>"; };
+		01628B5520B4293400D5CD3F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		01628B5620B4293400D5CD3F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		01628B5720B4293400D5CD3F /* VodafoneRg_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VodafoneRg_Bd.ttf; sourceTree = "<group>"; };
+		01628B5820B4293400D5CD3F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		01628B5B20B44C4000D5CD3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +93,52 @@
 		0137B42620B2C63E0026EA9A /* My Vodafone */ = {
 			isa = PBXGroup;
 			children = (
+				01628B5120B428FF00D5CD3F /* fonts */,
+				0137B43B20B3270F0026EA9A /* htmls */,
 				0137B42720B2C63E0026EA9A /* AppDelegate.swift */,
 				0137B42920B2C63E0026EA9A /* ViewController.swift */,
 				0137B42B20B2C63E0026EA9A /* Main.storyboard */,
+				01628B5B20B44C4000D5CD3F /* LoginViewController.swift */,
 				0137B42E20B2C63E0026EA9A /* Assets.xcassets */,
 				0137B43020B2C63E0026EA9A /* LaunchScreen.storyboard */,
 				0137B43320B2C63E0026EA9A /* Info.plist */,
+				01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */,
 			);
 			path = "My Vodafone";
+			sourceTree = "<group>";
+		};
+		0137B43B20B3270F0026EA9A /* htmls */ = {
+			isa = PBXGroup;
+			children = (
+				015737E720B32D2900759E21 /* terms_and_conditions.html */,
+				015737E820B32D2900759E21 /* terms_netperform.html */,
+				015737E920B32D2900759E21 /* terms.css */,
+				015737DD20B32C3800759E21 /* icon2.png */,
+				015737DB20B32C1F00759E21 /* icon1.png */,
+				0137B43920B326030026EA9A /* data_permissions.html */,
+				015737D520B32B8E00759E21 /* app.v2.css */,
+				015737D720B32BC500759E21 /* custom.css */,
+				015737D920B32BEF00759E21 /* font.css */,
+				015737DF20B32C8200759E21 /* roaming_faq.html */,
+				015737E120B32CAE00759E21 /* roamingdiscounts.html */,
+				015737E320B32CD500759E21 /* simswap.html */,
+				015737E520B32D0500759E21 /* slidebars.min.css */,
+			);
+			path = htmls;
+			sourceTree = "<group>";
+		};
+		01628B5120B428FF00D5CD3F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				01628B5520B4293400D5CD3F /* Roboto-Light.ttf */,
+				01628B5220B4293400D5CD3F /* Roboto-Medium.ttf */,
+				01628B5820B4293400D5CD3F /* Roboto-Regular.ttf */,
+				01628B5620B4293400D5CD3F /* Roboto-Thin.ttf */,
+				01628B5320B4293400D5CD3F /* VodafoneLt.ttf */,
+				01628B5720B4293400D5CD3F /* VodafoneRg_Bd.ttf */,
+				01628B5420B4293400D5CD3F /* VodafoneRg.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +200,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015737D820B32BC500759E21 /* custom.css in Resources */,
+				015737DA20B32BEF00759E21 /* font.css in Resources */,
+				015737EB20B32D2900759E21 /* terms_netperform.html in Resources */,
 				0137B43220B2C63E0026EA9A /* LaunchScreen.storyboard in Resources */,
+				015737E020B32C8200759E21 /* roaming_faq.html in Resources */,
+				0137B43A20B326030026EA9A /* data_permissions.html in Resources */,
 				0137B42F20B2C63E0026EA9A /* Assets.xcassets in Resources */,
+				015737EA20B32D2900759E21 /* terms_and_conditions.html in Resources */,
+				015737E220B32CAE00759E21 /* roamingdiscounts.html in Resources */,
+				015737E420B32CD500759E21 /* simswap.html in Resources */,
+				015737E620B32D0500759E21 /* slidebars.min.css in Resources */,
+				015737EC20B32D2900759E21 /* terms.css in Resources */,
+				015737D620B32B8E00759E21 /* app.v2.css in Resources */,
+				015737DC20B32C1F00759E21 /* icon1.png in Resources */,
+				01628B5920B42AA100D5CD3F /* VodafoneRg_Bd.ttf in Resources */,
+				01628B5A20B42AC300D5CD3F /* VodafoneRg.ttf in Resources */,
 				0137B42D20B2C63E0026EA9A /* Main.storyboard in Resources */,
+				015737DE20B32C3800759E21 /* icon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01628B5C20B44C4000D5CD3F /* LoginViewController.swift in Sources */,
 				0137B42A20B2C63E0026EA9A /* ViewController.swift in Sources */,
 				0137B42820B2C63E0026EA9A /* AppDelegate.swift in Sources */,
+				01628B5E20B46CC300D5CD3F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
