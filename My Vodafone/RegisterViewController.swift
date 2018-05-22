@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         // Setting default font type and size.
-        lblRegisterHeader.font = UIFont(name: defaultFontB, size: 30)
+        lblRegisterHeader.font = UIFont(name: defaultFontR, size: 30)
         lblRegisterHeader.text = "Register for \n My Vodafone"
         lblUsername.font = UIFont(name: defaultFontR, size: 17)
         lblPassword.font = UIFont(name: defaultFontR, size: 17)

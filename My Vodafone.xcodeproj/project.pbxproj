@@ -29,6 +29,7 @@
 		01628B5A20B42AC300D5CD3F /* VodafoneRg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01628B5420B4293400D5CD3F /* VodafoneRg.ttf */; };
 		01628B5C20B44C4000D5CD3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5B20B44C4000D5CD3F /* LoginViewController.swift */; };
 		01628B5E20B46CC300D5CD3F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */; };
+		01628B6020B4963900D5CD3F /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5F20B4963900D5CD3F /* PasswordRecoveryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		01628B5820B4293400D5CD3F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		01628B5B20B44C4000D5CD3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		01628B5F20B4963900D5CD3F /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0137B43020B2C63E0026EA9A /* LaunchScreen.storyboard */,
 				0137B43320B2C63E0026EA9A /* Info.plist */,
 				01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */,
+				01628B5F20B4963900D5CD3F /* PasswordRecoveryViewController.swift */,
 			);
 			path = "My Vodafone";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				01628B5C20B44C4000D5CD3F /* LoginViewController.swift in Sources */,
 				0137B42A20B2C63E0026EA9A /* ViewController.swift in Sources */,
 				0137B42820B2C63E0026EA9A /* AppDelegate.swift in Sources */,
+				01628B6020B4963900D5CD3F /* PasswordRecoveryViewController.swift in Sources */,
 				01628B5E20B46CC300D5CD3F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

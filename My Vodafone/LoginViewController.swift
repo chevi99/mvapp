@@ -27,11 +27,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // change font type and size
-        lblLoginHeader.font = UIFont(name: defaultFontB, size: 30)
-        lblLoginHeader.text = "Log in to \nMy Vodafone"
+        lblLoginHeader.font = UIFont(name: defaultFontR, size: 30)
+        lblLoginHeader.text = "Log in to \n My Vodafone"
         lblUsername.font = UIFont(name: defaultFontR, size: 17)
         lblPassword.font = UIFont(name: defaultFontR, size: 17)
-        lblNotReg.font = UIFont(name: defaultFontB, size: 22)
+        lblNotReg.font = UIFont(name: defaultFontR, size: 22)
         
         //buttons
         btnLogin.titleLabel?.font = UIFont(name: defaultFontR, size: 17)

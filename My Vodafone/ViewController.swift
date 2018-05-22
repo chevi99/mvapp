@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         /*Changing the font face type of all views
         Regular fonts to be use : VodafoneRg-Regular VodafoneRg-Bold*/
-        permission_header.font = UIFont(name: defaultFontB, size: 30)
+        permission_header.font = UIFont(name: defaultFontR, size: 30)
         data_perm_btn_cancel.titleLabel?.font = UIFont(name: defaultFontR, size: 17)
         data_perm_btn_ok.titleLabel?.font = UIFont(name: defaultFontR, size: 17)
         
