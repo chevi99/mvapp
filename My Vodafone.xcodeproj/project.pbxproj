@@ -13,6 +13,9 @@
 		0137B42F20B2C63E0026EA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0137B42E20B2C63E0026EA9A /* Assets.xcassets */; };
 		0137B43220B2C63E0026EA9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0137B43020B2C63E0026EA9A /* LaunchScreen.storyboard */; };
 		0137B43A20B326030026EA9A /* data_permissions.html in Resources */ = {isa = PBXBuildFile; fileRef = 0137B43920B326030026EA9A /* data_permissions.html */; };
+		0148661520B5626D00755585 /* fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148661420B5626D00755585 /* fonts.swift */; };
+		0148661720B5828C00755585 /* ForgottenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148661620B5828C00755585 /* ForgottenViewController.swift */; };
+		0148661920B58EC500755585 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148661820B58EC500755585 /* PasswordResetViewController.swift */; };
 		015737D620B32B8E00759E21 /* app.v2.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D520B32B8E00759E21 /* app.v2.css */; };
 		015737D820B32BC500759E21 /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D720B32BC500759E21 /* custom.css */; };
 		015737DA20B32BEF00759E21 /* font.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D920B32BEF00759E21 /* font.css */; };
@@ -41,6 +44,9 @@
 		0137B43120B2C63E0026EA9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0137B43320B2C63E0026EA9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0137B43920B326030026EA9A /* data_permissions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = data_permissions.html; sourceTree = "<group>"; };
+		0148661420B5626D00755585 /* fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fonts.swift; sourceTree = "<group>"; };
+		0148661620B5828C00755585 /* ForgottenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenViewController.swift; sourceTree = "<group>"; };
+		0148661820B58EC500755585 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		015737D520B32B8E00759E21 /* app.v2.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = app.v2.css; sourceTree = "<group>"; };
 		015737D720B32BC500759E21 /* custom.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
 		015737D920B32BEF00759E21 /* font.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = font.css; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 				0137B43320B2C63E0026EA9A /* Info.plist */,
 				01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */,
 				01628B5F20B4963900D5CD3F /* PasswordRecoveryViewController.swift */,
+				0148661420B5626D00755585 /* fonts.swift */,
+				0148661620B5828C00755585 /* ForgottenViewController.swift */,
+				0148661820B58EC500755585 /* PasswordResetViewController.swift */,
 			);
 			path = "My Vodafone";
 			sourceTree = "<group>";
@@ -233,8 +242,11 @@
 			files = (
 				01628B5C20B44C4000D5CD3F /* LoginViewController.swift in Sources */,
 				0137B42A20B2C63E0026EA9A /* ViewController.swift in Sources */,
+				0148661720B5828C00755585 /* ForgottenViewController.swift in Sources */,
+				0148661920B58EC500755585 /* PasswordResetViewController.swift in Sources */,
 				0137B42820B2C63E0026EA9A /* AppDelegate.swift in Sources */,
 				01628B6020B4963900D5CD3F /* PasswordRecoveryViewController.swift in Sources */,
+				0148661520B5626D00755585 /* fonts.swift in Sources */,
 				01628B5E20B46CC300D5CD3F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
