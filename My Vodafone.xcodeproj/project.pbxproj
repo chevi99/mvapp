@@ -33,6 +33,8 @@
 		01628B5C20B44C4000D5CD3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5B20B44C4000D5CD3F /* LoginViewController.swift */; };
 		01628B5E20B46CC300D5CD3F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */; };
 		01628B6020B4963900D5CD3F /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01628B5F20B4963900D5CD3F /* PasswordRecoveryViewController.swift */; };
+		01748C0520B6BE14005D8E82 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01748C0420B6BE14005D8E82 /* ChangePasswordViewController.swift */; };
+		01748C0720B6C4C3005D8E82 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01748C0620B6C4C3005D8E82 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		01628B5B20B44C4000D5CD3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01628B5D20B46CC300D5CD3F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		01628B5F20B4963900D5CD3F /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
+		01748C0420B6BE14005D8E82 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		01748C0620B6C4C3005D8E82 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				0148661420B5626D00755585 /* fonts.swift */,
 				0148661620B5828C00755585 /* ForgottenViewController.swift */,
 				0148661820B58EC500755585 /* PasswordResetViewController.swift */,
+				01748C0420B6BE14005D8E82 /* ChangePasswordViewController.swift */,
+				01748C0620B6C4C3005D8E82 /* MenuViewController.swift */,
 			);
 			path = "My Vodafone";
 			sourceTree = "<group>";
@@ -241,8 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01628B5C20B44C4000D5CD3F /* LoginViewController.swift in Sources */,
+				01748C0720B6C4C3005D8E82 /* MenuViewController.swift in Sources */,
 				0137B42A20B2C63E0026EA9A /* ViewController.swift in Sources */,
 				0148661720B5828C00755585 /* ForgottenViewController.swift in Sources */,
+				01748C0520B6BE14005D8E82 /* ChangePasswordViewController.swift in Sources */,
 				0148661920B58EC500755585 /* PasswordResetViewController.swift in Sources */,
 				0137B42820B2C63E0026EA9A /* AppDelegate.swift in Sources */,
 				01628B6020B4963900D5CD3F /* PasswordRecoveryViewController.swift in Sources */,
