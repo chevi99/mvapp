@@ -18,8 +18,47 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var ic_calls: UIImageView!
     @IBOutlet weak var ic_map_locator: UIImageView!
     @IBOutlet weak var ic_network: UIImageView!
+    @IBOutlet weak var ic_mail: UIImageView!
+    @IBOutlet weak var ic_profile: UIImageView!
+    @IBOutlet weak var ic_settings: UIImageView!
+    @IBOutlet weak var ic_info: UIImageView!
+    @IBOutlet weak var ic_logout: UIImageView!
+    
+    @IBOutlet weak var dropDownImage: UIButton!
+    
+    @IBOutlet var networkActivities: [UIButton]!
+    
+    @IBOutlet weak var btnLHome: UIButton!
+    @IBOutlet weak var btnLPdtServices: UIButton!
+    @IBOutlet weak var btnLOffers: UIButton!
+    @IBOutlet weak var btnLTopUp: UIButton!
+    @IBOutlet weak var btnLTravellingAbroad: UIButton!
+    @IBOutlet weak var btnLSupport: UIButton!
+    @IBOutlet weak var btnLStoreLocator: UIButton!
+    @IBOutlet weak var btnLNetwork: UIButton!
+    @IBOutlet weak var btnLMyMessages: UIButton!
+    @IBOutlet weak var btnLProfile: UIButton!
+    @IBOutlet weak var btnLSettings: UIButton!
+    @IBOutlet weak var btnLAbout: UIButton!
+    @IBOutlet weak var btnLLogout: UIButton!
+    @IBOutlet weak var lblVersion: UILabel!
+    
+    
+    @IBOutlet weak var ic_mail_top_constraint: NSLayoutConstraint!
+    @IBOutlet weak var btnMyMessagesTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ic_profile_top_constraint: NSLayoutConstraint!
+    @IBOutlet weak var btnProfileTopConstraint: UIButton!
+    @IBOutlet weak var ic_settings_top_constraint: NSLayoutConstraint!
+    @IBOutlet weak var btnSettingsTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ic_info_top_constraint: NSLayoutConstraint!
+    @IBOutlet weak var btnAboutTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var ic_logout_top_constraint: NSLayoutConstraint!
+    @IBOutlet weak var btnLogoutTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var lblVersionTopConstraint: NSLayoutConstraint!
+    
     
 //    var menuShowing = false
+    var chevronClicked = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +101,27 @@ class MenuViewController: UIViewController {
         let templateImageNetwork = ic_network.image?.withRenderingMode(.alwaysTemplate)
         ic_network.image = templateImageNetwork
         ic_network.tintColor = UIColor.white
+        
+        let templateImageMessage = ic_mail.image?.withRenderingMode(.alwaysTemplate)
+        ic_mail.image = templateImageMessage
+        ic_mail.tintColor = UIColor.white
+        
+        let templateImageProfile = ic_profile.image?.withRenderingMode(.alwaysTemplate)
+        ic_profile.image = templateImageProfile
+        ic_profile.tintColor = UIColor.white
+        
+        let templateImageSettings = ic_settings.image?.withRenderingMode(.alwaysTemplate)
+        ic_settings.image = templateImageSettings
+        ic_settings.tintColor = UIColor.white
+        
+        let templateImageAbout = ic_info.image?.withRenderingMode(.alwaysTemplate)
+        ic_info.image = templateImageAbout
+        ic_info.tintColor = UIColor.white
+        
+        let templateImageLogout = ic_logout.image?.withRenderingMode(.alwaysTemplate)
+        ic_logout.image = templateImageLogout
+        ic_logout.tintColor = UIColor.white
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,5 +161,73 @@ class MenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    enum selActivity: String {
+        case speedChecker = "Speed checker"
+        case networkUsage = "Network usage"
+        case broadbandFinder = "Broadband Finder"
+        case networkCoverage = "Network Coverage"
+    }
+    
+    //handle activity of a selected network activity
+    @IBAction func networkTapped(_ sender: UIButton) {
+        //get the title of the selected button
+        guard let title = sender.currentTitle, let activity = selActivity(rawValue: title) else {
+            return
+        }
+        
+        switch activity {
+        case .speedChecker:
+            print("Move to speed checker")
+        default:
+            print("Remain")
+        }
+    }
+    
+    
+    //handle network button click
+    @IBAction func handleSelection(_ sender: UIButton) {
+        networkActivities.forEach { (button) in
+            //Remove animation for simplicity
+            button.isHidden = !button.isHidden
+            self.view.layoutIfNeeded()
+            /*UIView.animate(withDuration: 0, animations: {
+             
+            })*/
+            
+        }
+        
+        if chevronClicked != false {
+            
+            dropDownImage.setImage(UIImage(named: "ic_chevron_down"), for: .normal)
+            dropDownImage.tintColor = UIColor.white
+            chevronClicked = false
+            
+            //code to set top constraint
+            ic_mail_top_constraint.constant = 10
+            btnMyMessagesTopConstraint.constant = 10
+            ic_mail.layoutIfNeeded()
+            btnLMyMessages.layoutIfNeeded()
+            
+        }else{
+            
+            /*get image name from assets
+             set it to tint image then set the colour of the image on the button*/
+            let chevron_up = UIImage(named: "chevron_up")
+            let tintedImage = chevron_up?.withRenderingMode(.alwaysTemplate)
+            dropDownImage.setImage(tintedImage, for: .normal)
+            dropDownImage.tintColor = UIColor.white
+            chevronClicked = true
+            
+            //code to set top constraint
+            ic_mail_top_constraint.constant = 120
+            btnMyMessagesTopConstraint.constant = 120
+            ic_mail.layoutIfNeeded()
+            btnLMyMessages.layoutIfNeeded()
+        }
+    
+        
+    }
+    
+    
 }
