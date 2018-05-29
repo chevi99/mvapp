@@ -10,6 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    //connecting ui image views
     @IBOutlet weak var ic_home_image: UIImageView!
     @IBOutlet weak var ic_mobile: UIImageView!
     @IBOutlet weak var ic_ratings: UIImageView!
@@ -24,10 +25,10 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var ic_info: UIImageView!
     @IBOutlet weak var ic_logout: UIImageView!
     
+    //connecting ui buttons
     @IBOutlet weak var dropDownImage: UIButton!
-    
+    //connecting an array of networking buttons
     @IBOutlet var networkActivities: [UIButton]!
-    
     @IBOutlet weak var btnLHome: UIButton!
     @IBOutlet weak var btnLPdtServices: UIButton!
     @IBOutlet weak var btnLOffers: UIButton!
@@ -43,7 +44,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var btnLLogout: UIButton!
     @IBOutlet weak var lblVersion: UILabel!
     
-    
+    //connecting uiimage views to enable constraints to be changed
     @IBOutlet weak var ic_mail_top_constraint: NSLayoutConstraint!
     @IBOutlet weak var btnMyMessagesTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var ic_profile_top_constraint: NSLayoutConstraint!
@@ -57,18 +58,21 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var lblVersionTopConstraint: NSLayoutConstraint!
     
     
-//    var menuShowing = false
+    var menuShowing = false
     var chevronClicked = false
+    
+    @IBOutlet weak var menuViewLeadingConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //code to change image colours
         self.perform(#selector(changeImageColorToWhite), with: nil, afterDelay: 0)
 //        drawMenuShadow()
         
         
     }
-    
+    /*Function to change image colours to white*/
     @objc func changeImageColorToWhite() {
         let templateImageHome = ic_home_image.image?.withRenderingMode(.alwaysTemplate)
         ic_home_image.image = templateImageHome
@@ -162,6 +166,7 @@ class MenuViewController: UIViewController {
     }
     */
     
+    //Enum for Network Activites
     enum selActivity: String {
         case speedChecker = "Speed checker"
         case networkUsage = "Network usage"
@@ -225,8 +230,17 @@ class MenuViewController: UIViewController {
             ic_mail.layoutIfNeeded()
             btnLMyMessages.layoutIfNeeded()
         }
-    
-        
+    }
+    @IBAction func showMenu(_ sender: Any) {
+        if(menuShowing){
+            menuViewLeadingConstraint.constant = 480
+        }else{
+            menuViewLeadingConstraint.constant = 100
+        }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShowing = !menuShowing
     }
     
     
