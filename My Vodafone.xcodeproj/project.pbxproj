@@ -16,6 +16,8 @@
 		0148661520B5626D00755585 /* fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148661420B5626D00755585 /* fonts.swift */; };
 		0148661720B5828C00755585 /* ForgottenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148661620B5828C00755585 /* ForgottenViewController.swift */; };
 		0148661920B58EC500755585 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148661820B58EC500755585 /* PasswordResetViewController.swift */; };
+		014ADBD520BECA9900859479 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014ADBD420BECA9900859479 /* CardView.swift */; };
+		014ADBD720BED4A100859479 /* ProductsServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014ADBD620BED4A100859479 /* ProductsServicesViewController.swift */; };
 		015737D620B32B8E00759E21 /* app.v2.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D520B32B8E00759E21 /* app.v2.css */; };
 		015737D820B32BC500759E21 /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D720B32BC500759E21 /* custom.css */; };
 		015737DA20B32BEF00759E21 /* font.css in Resources */ = {isa = PBXBuildFile; fileRef = 015737D920B32BEF00759E21 /* font.css */; };
@@ -49,6 +51,8 @@
 		0148661420B5626D00755585 /* fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fonts.swift; sourceTree = "<group>"; };
 		0148661620B5828C00755585 /* ForgottenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenViewController.swift; sourceTree = "<group>"; };
 		0148661820B58EC500755585 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
+		014ADBD420BECA9900859479 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		014ADBD620BED4A100859479 /* ProductsServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServicesViewController.swift; sourceTree = "<group>"; };
 		015737D520B32B8E00759E21 /* app.v2.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = app.v2.css; sourceTree = "<group>"; };
 		015737D720B32BC500759E21 /* custom.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
 		015737D920B32BEF00759E21 /* font.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = font.css; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				0148661820B58EC500755585 /* PasswordResetViewController.swift */,
 				01748C0420B6BE14005D8E82 /* ChangePasswordViewController.swift */,
 				01748C0620B6C4C3005D8E82 /* MenuViewController.swift */,
+				014ADBD420BECA9900859479 /* CardView.swift */,
+				014ADBD620BED4A100859479 /* ProductsServicesViewController.swift */,
 			);
 			path = "My Vodafone";
 			sourceTree = "<group>";
@@ -255,6 +261,8 @@
 				0137B42820B2C63E0026EA9A /* AppDelegate.swift in Sources */,
 				01628B6020B4963900D5CD3F /* PasswordRecoveryViewController.swift in Sources */,
 				0148661520B5626D00755585 /* fonts.swift in Sources */,
+				014ADBD520BECA9900859479 /* CardView.swift in Sources */,
+				014ADBD720BED4A100859479 /* ProductsServicesViewController.swift in Sources */,
 				01628B5E20B46CC300D5CD3F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
