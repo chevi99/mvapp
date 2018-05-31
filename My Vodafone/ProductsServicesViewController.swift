@@ -19,6 +19,9 @@ class ProductsServicesViewController: UIViewController {
     @IBOutlet weak var lblUsername: UILabel!
     @IBOutlet weak var lblUserNumber: UILabel!
     
+    @IBOutlet weak var addServices: CardView!
+    
+    
     //constants for various fonts used in app
     let defaultFontR = "VodafoneRg-Regular"
     let defaultFontB = "VodafoneRg-Bold"
@@ -35,6 +38,17 @@ class ProductsServicesViewController: UIViewController {
         
         //change fonts
         display_fonts()
+        
+        let gestureRec = UITapGestureRecognizer(target: self, action: #selector(self.goToAddServices))
+        addServices.addGestureRecognizer(gestureRec)
+    }
+    
+    @objc func goToAddServices(_sender: UITapGestureRecognizer){
+//        print("You just clicked")
+        let moveTo = storyboard?.instantiateViewController(withIdentifier: "AddServiceViewController")
+        present(moveTo!, animated: true, completion: nil)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
