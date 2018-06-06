@@ -20,6 +20,7 @@ class ProductsServicesViewController: UIViewController {
     @IBOutlet weak var lblUserNumber: UILabel!
     
     @IBOutlet weak var addServices: CardView!
+    @IBOutlet weak var userPdtDetails: CardView!
     
     
     //constants for various fonts used in app
@@ -31,6 +32,8 @@ class ProductsServicesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // make profile pic round
         makePicRound(image: profile_pic)
@@ -41,14 +44,26 @@ class ProductsServicesViewController: UIViewController {
         
         let gestureRec = UITapGestureRecognizer(target: self, action: #selector(self.goToAddServices))
         addServices.addGestureRecognizer(gestureRec)
+        
+        let gestureRec2 = UITapGestureRecognizer(target: self, action: #selector(self.goToUserPdtDetails))
+        userPdtDetails.addGestureRecognizer(gestureRec2)
+        
     }
     
     @objc func goToAddServices(_sender: UITapGestureRecognizer){
 //        print("You just clicked")
         let moveTo = storyboard?.instantiateViewController(withIdentifier: "AddServiceViewController")
-        present(moveTo!, animated: true, completion: nil)
+        self.navigationController?.pushViewController(moveTo!, animated: true)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+//        present(moveTo!, animated: true, completion: nil)
         
-        
+    }
+    
+    //Creating a gesture function to move to user's Products Details
+    @objc func goToUserPdtDetails(_sender: UITapGestureRecognizer) {
+        let moveTo = storyboard?.instantiateViewController(withIdentifier: "CustomerPdtsDetailsViewController")
+        self.navigationController?.pushViewController(moveTo!, animated: true)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -70,6 +70,11 @@ class MenuViewController: UIViewController {
         self.perform(#selector(changeImageColorToWhite), with: nil, afterDelay: 0)
 //        drawMenuShadow()
         
+        //change the back button
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "leftArrow")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "leftArrow")
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        
         
     }
     /*Function to change image colours to white*/
@@ -241,6 +246,18 @@ class MenuViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         menuShowing = !menuShowing
+    }
+    
+    
+    //Function to hide back buttton
+    func hideBackButton(){
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        menuViewLeadingConstraint.constant = 480
+        
+        menuShowing = false
     }
     
     
