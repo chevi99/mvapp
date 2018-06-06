@@ -24,6 +24,8 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var ic_settings: UIImageView!
     @IBOutlet weak var ic_info: UIImageView!
     @IBOutlet weak var ic_logout: UIImageView!
+    @IBOutlet weak var opacityView: UIView!
+    @IBOutlet weak var hamburger: UIBarButtonItem!
     
     //connecting ui buttons
     @IBOutlet weak var dropDownImage: UIButton!
@@ -56,10 +58,16 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var ic_logout_top_constraint: NSLayoutConstraint!
     @IBOutlet weak var btnLogoutTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var lblVersionTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var opacityViewBottomConstraint: NSLayoutConstraint!
     
     
     var menuShowing = false
     var chevronClicked = false
+    
+    //get close image
+    var close_image = UIImage(named: "new_close")
+    //get hamburger image
+    var hamburger_image = UIImage(named: "hamburger")
     
     @IBOutlet weak var menuViewLeadingConstraint: NSLayoutConstraint!
     
@@ -216,8 +224,10 @@ class MenuViewController: UIViewController {
             //code to set top constraint
             ic_mail_top_constraint.constant = 10
             btnMyMessagesTopConstraint.constant = 10
+            opacityViewBottomConstraint.constant = 250
             ic_mail.layoutIfNeeded()
             btnLMyMessages.layoutIfNeeded()
+            opacityView.layoutIfNeeded()
             
         }else{
             
@@ -232,15 +242,20 @@ class MenuViewController: UIViewController {
             //code to set top constraint
             ic_mail_top_constraint.constant = 120
             btnMyMessagesTopConstraint.constant = 120
+            opacityViewBottomConstraint.constant = 130
             ic_mail.layoutIfNeeded()
             btnLMyMessages.layoutIfNeeded()
+            opacityView.layoutIfNeeded()
         }
     }
     @IBAction func showMenu(_ sender: Any) {
         if(menuShowing){
             menuViewLeadingConstraint.constant = 480
+            hamburger.image = hamburger_image
         }else{
             menuViewLeadingConstraint.constant = 100
+            //code to change image of hamburger
+            hamburger.image = close_image
         }
         UIView.animate(withDuration: 0.3, animations: {
             self.view.layoutIfNeeded()
