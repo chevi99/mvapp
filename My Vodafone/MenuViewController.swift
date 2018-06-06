@@ -71,6 +71,14 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var menuViewLeadingConstraint: NSLayoutConstraint!
     
+    //constants for various fonts used in app
+    let defaultFontR = "VodafoneRg-Regular"
+    let defaultFontB = "VodafoneRg-Bold"
+    let defaultFontSizeR: CGFloat = 17
+    let defaultFontSizeS: CGFloat = 13
+    let defaultFontSizeB: CGFloat = 27
+    let defaultFontSizeT: CGFloat = 25
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,6 +91,8 @@ class MenuViewController: UIViewController {
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "leftArrow")
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
+        //change fonts
+        display_fonts()
         
     }
     /*Function to change image colours to white*/
@@ -222,8 +232,8 @@ class MenuViewController: UIViewController {
             chevronClicked = false
             
             //code to set top constraint
-            ic_mail_top_constraint.constant = 10
-            btnMyMessagesTopConstraint.constant = 10
+            ic_mail_top_constraint.constant = 11
+            btnMyMessagesTopConstraint.constant = 17
             opacityViewBottomConstraint.constant = 250
             ic_mail.layoutIfNeeded()
             btnLMyMessages.layoutIfNeeded()
@@ -240,8 +250,8 @@ class MenuViewController: UIViewController {
             chevronClicked = true
             
             //code to set top constraint
-            ic_mail_top_constraint.constant = 120
-            btnMyMessagesTopConstraint.constant = 120
+            ic_mail_top_constraint.constant = 130
+            btnMyMessagesTopConstraint.constant = 130
             opacityViewBottomConstraint.constant = 130
             ic_mail.layoutIfNeeded()
             btnLMyMessages.layoutIfNeeded()
@@ -273,6 +283,22 @@ class MenuViewController: UIViewController {
         menuViewLeadingConstraint.constant = 480
         
         menuShowing = false
+    }
+    
+    func display_fonts(){
+        btnLHome.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLAbout.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLTopUp.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLLogout.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLOffers.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLNetwork.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLProfile.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLSupport.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLSettings.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLMyMessages.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLPdtServices.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLStoreLocator.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        lblVersion.font = UIFont(name: defaultFontR, size: defaultFontSizeS)
     }
     
     
