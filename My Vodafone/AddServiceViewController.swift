@@ -12,8 +12,11 @@ class AddServiceViewController: UIViewController, UIPickerViewDelegate, UIPicker
 
     @IBOutlet weak var serviceType: UITextField!
     @IBOutlet weak var dropdown: UIPickerView!
+    @IBOutlet weak var enterIDTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var chevDown: UIImageView!
     
-    var list = ["Fixed Broadband", "Mobile"]
+    var list = ["","Fixed Broadband", "Mobile"]
+    var enterIDTopDown = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,23 +39,54 @@ class AddServiceViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         self.view.endEditing(true)
+        
         return list[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.serviceType.text = self.list[row]
+        self.serviceType.isHidden = false
+        self.chevDown.isHidden = false
         self.dropdown.isHidden = true
+        self.serviceType.text = self.list[row]
+        
+        enterIDTopConstraint.constant = 15
     }
     
     func textFieldDidBeginEditing(_ textfield: UITextField){
+
+        
+        
         if textfield == self.serviceType {
             self.dropdown.isHidden = false
-            
             textfield.endEditing(true)
+                
         }
     }
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+//        print("try moving down")
+        enterIDTopConstraint.constant = 80
+        dropdown.isHidden = false
+//        serviceType.isHidden = true
+        chevDown.isHidden = true
+        return false
+    }
+   
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let pickerLabel = UILabel()
+        let titleData = list[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.font: UIFont(name: "VodafoneRg-Regular", size: 16)!])
+        pickerLabel.attributedText = myTitle
+        return pickerLabel
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 28.0
+    }
+    
 
+    
     /*
     // MARK: - Navigation
 

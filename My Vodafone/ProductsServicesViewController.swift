@@ -26,9 +26,9 @@ class ProductsServicesViewController: UIViewController {
     //constants for various fonts used in app
     let defaultFontR = "VodafoneRg-Regular"
     let defaultFontB = "VodafoneRg-Bold"
-    let defaultFontSizeR: CGFloat = 18
+    let defaultFontSizeR: CGFloat = 17
     let defaultFontSizeB: CGFloat = 27
-    let defaultFontSizeT: CGFloat = 25
+    let defaultFontSizeT: CGFloat = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
