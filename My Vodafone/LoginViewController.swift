@@ -19,12 +19,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnForgotten: UIButton!
     @IBOutlet weak var lblNotReg: UILabel!
     @IBOutlet weak var btnRegister: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     
     let defaultFontR = "VodafoneRg-Regular"
     let defaultFontB = "VodafoneRg-Bold"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //scroll function
+        let bottomOffset = CGPoint(x:0, y:scrollView.contentSize.height - scrollView.bounds.size.height)
+        scrollView.setContentOffset(bottomOffset, animated: true)
 
         // change font type and size
         lblLoginHeader.font = UIFont(name: defaultFontR, size: 30)

@@ -45,6 +45,10 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var btnLAbout: UIButton!
     @IBOutlet weak var btnLLogout: UIButton!
     @IBOutlet weak var lblVersion: UILabel!
+    @IBOutlet weak var btnLSpeedChecker: UIButton!
+    @IBOutlet weak var btnLNetworkUsage: UIButton!
+    @IBOutlet weak var btnLBBF: UIButton!
+    @IBOutlet weak var btnLNetworkCov: UIButton!
     
     //connecting uiimage views to enable constraints to be changed
     @IBOutlet weak var ic_mail_top_constraint: NSLayoutConstraint!
@@ -59,6 +63,8 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var btnLogoutTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var lblVersionTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var opacityViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var opacityHeightConstraint: NSLayoutConstraint!
+    
     
     
     var menuShowing = false
@@ -149,6 +155,8 @@ class MenuViewController: UIViewController {
         ic_logout.image = templateImageLogout
         ic_logout.tintColor = UIColor.white
         
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -234,7 +242,8 @@ class MenuViewController: UIViewController {
             //code to set top constraint
             ic_mail_top_constraint.constant = 11
             btnMyMessagesTopConstraint.constant = 17
-            opacityViewBottomConstraint.constant = 250
+//            opacityViewBottomConstraint.constant = 250
+            opacityHeightConstraint.constant = 600
             ic_mail.layoutIfNeeded()
             btnLMyMessages.layoutIfNeeded()
             opacityView.layoutIfNeeded()
@@ -252,7 +261,8 @@ class MenuViewController: UIViewController {
             //code to set top constraint
             ic_mail_top_constraint.constant = 130
             btnMyMessagesTopConstraint.constant = 130
-            opacityViewBottomConstraint.constant = 130
+            opacityHeightConstraint.constant = 700
+//            opacityViewBottomConstraint.constant = 130
             ic_mail.layoutIfNeeded()
             btnLMyMessages.layoutIfNeeded()
             opacityView.layoutIfNeeded()
@@ -281,6 +291,7 @@ class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         menuViewLeadingConstraint.constant = 480
+        hamburger.image = hamburger_image
         
         menuShowing = false
     }
@@ -298,6 +309,10 @@ class MenuViewController: UIViewController {
         btnLMyMessages.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
         btnLPdtServices.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
         btnLStoreLocator.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLBBF.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLSpeedChecker.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLNetworkCov.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
+        btnLNetworkUsage.titleLabel?.font = UIFont(name: defaultFontR, size: defaultFontSizeR)
         lblVersion.font = UIFont(name: defaultFontR, size: defaultFontSizeS)
     }
     
